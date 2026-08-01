@@ -1,0 +1,879 @@
+/* =====================================================
+   SCPS - Admin Theme
+===================================================== */
+
+:root {
+
+    --primary:#6F42C1;
+    --primary-dark:#5A32A3;
+    --primary-light:#E9D8FD;
+
+    --success:#6F42C1;
+    --danger:#EF4444;
+    --warning:#F59E0B;
+    --info:#0EA5E9;
+
+}
+
+/* ===============================
+   Sidebar
+================================ */
+
+.sidebar{
+
+    background:linear-gradient(
+        180deg,
+        var(--primary),
+        var(--primary-dark)
+    ) !important;
+
+}
+
+.sidebar .nav-link{
+
+    color:#ffffff;
+
+}
+
+.sidebar .nav-link:hover{
+
+    background:rgba(255,255,255,.12);
+
+    color:#ffffff;
+
+}
+
+.sidebar .nav-link.active{
+
+    background:#ffffff;
+
+    color:var(--primary-dark);
+
+}
+
+.sidebar .nav-link.active i{
+
+    color:var(--primary-dark);
+
+}
+
+/* ===============================
+   Logo
+================================ */
+
+.logo-icon{
+
+    color:#ffffff;
+
+}
+
+.logo-text{
+
+    color:#ffffff;
+
+}
+
+/* ===============================
+   Topbar
+================================ */
+
+.topbar{
+
+    border-bottom:2px solid var(--primary-light);
+
+}
+
+/* ===============================
+   Buttons
+================================ */
+
+.btn-primary{
+
+    background:var(--primary);
+
+    border-color:var(--primary);
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+    border-color:var(--primary-dark);
+
+}
+
+.btn-outline-primary{
+
+    color:var(--primary);
+
+    border-color:var(--primary);
+
+}
+
+.btn-outline-primary:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ===============================
+   Background
+================================ */
+
+.bg-primary{
+
+    background:var(--primary)!important;
+
+}
+
+.text-primary{
+
+    color:var(--primary)!important;
+
+}
+
+.border-primary{
+
+    border-color:var(--primary)!important;
+
+}
+
+/* ===============================
+   Cards
+================================ */
+
+.card{
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    border-color:var(--primary-light);
+
+}
+
+/* Dashboard Card */
+
+.dashboard-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#E5D4FF;
+
+}
+
+.dashboard-card h3{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.dashboard-card i{
+
+    color:var(--primary);
+
+    font-size:38px;
+
+}
+
+/* ===============================
+   Form
+================================ */
+
+.form-control:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 .2rem rgba(111,66,193,.20);
+
+}
+
+.form-select:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 .2rem rgba(111,66,193,.20);
+
+}
+
+/* ===============================
+   Links
+================================ */
+
+a{
+
+    color:var(--primary);
+
+}
+
+a:hover{
+
+    color:var(--primary-dark);
+
+}
+
+/* ===============================
+   Badge
+================================ */
+
+.badge.bg-primary{
+
+    background:var(--primary)!important;
+
+}
+
+/* ===============================
+   Pagination
+================================ */
+
+.page-item.active .page-link{
+
+    background:var(--primary);
+
+    border-color:var(--primary);
+
+}
+
+.page-link{
+
+    color:var(--primary);
+
+}
+
+.page-link:hover{
+
+    color:var(--primary-dark);
+
+}
+
+/* ===============================
+   Table
+================================ */
+
+.table thead{
+
+    background:var(--primary-light);
+
+}
+
+.table thead th{
+
+    color:#5A32A3;
+
+    font-weight:600;
+
+}
+
+.table-hover tbody tr:hover{
+
+    background:#faf7ff;
+
+}
+
+/* ===============================
+   SweetAlert
+================================ */
+
+.swal2-confirm{
+
+    background:var(--primary)!important;
+
+}
+
+/* ===============================
+   Admin Register / Login Header
+================================ */
+
+.admin-register-header{
+
+    margin:30px 0 40px;
+
+}
+
+.admin-register-icon{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-top:25px;
+    margin-bottom:20px;
+
+}
+
+.admin-register-icon i{
+
+    color:#6f42c1 !important;
+
+}
+
+/* ===============================
+Admin Login Header
+================================ */
+
+.admin-login-icon{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-top:25px;
+    margin-bottom:20px;
+
+}
+
+.admin-login-icon i{
+
+    font-size:58px;
+
+    color:#6f42c1 !important;
+
+    display:block;
+
+}
+
+.admin-title{
+
+    font-size:46px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.admin-register-header p{
+
+    margin-bottom:0;
+
+}
+
+.admin-icon{
+
+    color:#6F42C1;
+
+}
+
+/* ===============================
+   Auth Page
+================================ */
+
+.auth-wrapper{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#f5f3ff;
+
+    padding:40px 15px;
+
+}
+
+.auth-card{
+
+    width:100%;
+
+    max-width:470px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.auth-logo{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.auth-logo h3{
+
+    font-weight:700;
+
+}
+
+.auth-logo p{
+
+    color:#6c757d;
+
+}
+
+/* ===============================
+   Profile Image
+================================ */
+
+.profile-image{
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #E9D8FD;
+
+}
+
+/* ===============================
+   Dropdown
+================================ */
+
+.dropdown-menu{
+
+    border:none;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.10);
+
+}
+
+/* ==========================================
+   Admin Theme Override
+========================================== */
+
+/* Sidebar */
+
+.admin-theme .sidebar{
+
+    background:#6F42C1;
+
+}
+
+/* Sidebar Hover */
+
+.admin-theme .sidebar-menu li a:hover{
+
+    background:#ffffff;
+
+    color:#6F42C1;
+
+}
+
+/* Active Menu */
+
+.admin-theme .sidebar-menu li.active a{
+
+    background:#ffffff;
+
+    color:#6F42C1;
+
+}
+
+.admin-theme .sidebar-menu li.active i{
+
+    color:#6F42C1;
+
+}
+
+/* ==========================================
+   Dashboard Cards
+========================================== */
+
+.admin-theme .dashboard-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.admin-theme .dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#E5D4FF;
+
+}
+
+.admin-theme .dashboard-card h6{
+
+    color:#6c757d;
+
+    font-weight:500;
+
+}
+
+.admin-theme .dashboard-card h3{
+
+    color:#6F42C1;
+
+    font-weight:700;
+
+}
+
+.admin-theme .dashboard-card i{
+
+    color:#6F42C1;
+
+}
+
+/* ==========================================
+   Card Header
+========================================== */
+
+.admin-theme .card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.admin-theme .card-header{
+
+    background:#ffffff;
+
+    color:#222;
+
+    border-bottom:1px solid #ececec;
+
+    padding:18px 22px;
+
+    font-weight:600;
+
+}
+
+.admin-theme .card-header h5{
+
+    margin:0;
+
+    color:#222;
+
+}
+
+.admin-theme .card-header .btn{
+
+    border-radius:10px;
+
+}
+
+/* ==========================================
+   Tables
+========================================== */
+
+.admin-theme .table{
+
+    margin-bottom:0;
+
+}
+
+.admin-theme .table td{
+
+    vertical-align:middle;
+
+}
+
+.admin-theme .table img{
+
+    object-fit:cover;
+
+}
+
+/* ==========================================
+   Topbar
+========================================== */
+
+.admin-theme .navbar{
+
+    border-bottom:2px solid #E9D8FD;
+
+}
+
+/* ==========================================
+   Button Override
+========================================== */
+
+/* .admin-theme .btn-success{
+
+    background:#6F42C1;
+
+    border-color:#6F42C1;
+
+}
+
+.admin-theme .btn-success:hover{
+
+    background:#5A32A3;
+
+    border-color:#5A32A3;
+
+} */
+
+/* ==========================================
+   Profile
+========================================== */
+
+.admin-theme .profile-image{
+
+    border:5px solid #E9D8FD;
+
+}
+
+/* ==========================================
+   Collapse
+========================================== */
+
+.collapse{
+
+    transition:all .35s ease;
+
+}
+
+.collapsing{
+
+    transition:height .35s ease;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:991px){
+
+    .auth-card{
+
+        max-width:100%;
+
+    }
+
+    .dashboard-card{
+
+        margin-bottom:20px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .admin-title{
+
+        font-size:34px;
+
+    }
+
+    .profile-image{
+
+        width:110px;
+
+        height:110px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .dashboard-card{
+
+        text-align:center;
+
+    }
+
+    .dashboard-card i{
+
+        display:block;
+
+        margin-bottom:12px;
+
+    }
+
+}
+
+#applicationChart{
+
+    max-height:300px !important;
+
+}
+
+#dashboardChart{
+
+    max-height:300px !important;
+
+}
+
+/*=================================
+Admin Footer
+=================================*/
+
+.admin-footer{
+
+    background:#ffffff;
+
+    color:#1e293b;
+
+    border-top:4px solid #6f42c1;
+
+    padding:50px 0 20px;
+
+    margin-top:60px;
+
+    box-shadow:0 -3px 15px rgba(0,0,0,.08);
+
+}
+
+.admin-footer h4,
+.admin-footer h5{
+
+    color:#6f42c1;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.admin-footer p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:12px;
+
+}
+
+.admin-footer p i{
+
+    color:#6f42c1;
+
+    width:18px;
+
+}
+
+.admin-footer ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.admin-footer ul li{
+
+    margin-bottom:12px;
+
+}
+
+.admin-footer ul li a{
+
+    color:#334155;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.admin-footer ul li a:hover{
+
+    color:#6f42c1;
+
+    padding-left:5px;
+
+}
+
+.admin-social{
+
+    margin-top:20px;
+
+}
+
+.admin-social a{
+
+    width:40px;
+
+    height:40px;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#f3ecff;
+
+    color:#6f42c1;
+
+    margin-right:8px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.admin-social a:hover{
+
+    background:#6f42c1;
+
+    color:#ffffff;
+
+}
+
+.admin-footer .text-center{
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+    border-top:1px solid #dee2e6;
+
+    color:#6b7280;
+
+}

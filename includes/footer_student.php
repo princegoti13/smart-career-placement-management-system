@@ -1,0 +1,213 @@
+<footer class="student-footer">
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <!-- About -->
+
+            <div class="col-lg-4">
+
+                <h4>
+
+                    <i class="fas fa-user-graduate me-2"></i>
+
+                    Student Panel
+
+                </h4>
+
+                <p>
+
+                    Student Panel Allows You To Build Your Profile,
+                    Upload Resume, Search Jobs, Apply Online And
+                    Track Your Placement Journey.
+
+                </p>
+
+                <div class="student-social">
+
+                    <a href="#">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="col-lg-2 col-md-4">
+
+                <h5>
+
+                    Quick Links
+
+                </h5>
+
+                <ul>
+
+                    <li>
+
+                        <a href="dashboard.php">
+
+                            Dashboard
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="profile.php">
+
+                            My Profile
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="view_jobs.php">
+
+                            View Jobs
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="my_applications.php">
+
+                            Applications
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Career -->
+
+            <div class="col-lg-3 col-md-4">
+
+                <h5>
+
+                    Career
+
+                </h5>
+
+                <ul>
+
+                    <li>
+
+                        <a href="skills_resume.php">
+
+                            Skills & Resume
+
+                        </a>
+
+                    </li>                    
+
+                    <li>
+
+                        <a href="edit_profile.php">
+
+                            Edit Profile
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="col-lg-3 col-md-4">
+
+                <h5>
+
+                    Contact
+
+                </h5>
+
+                <p>
+
+                    <i class="fas fa-envelope me-2"></i>
+
+                    support@scps.com
+
+                </p>
+                <p>
+
+                    <i class="fas fa-envelope me-2"></i>
+
+                    support@scps.com
+
+                </p>
+                <p>
+
+                    <i class="fas fa-envelope me-2"></i>
+
+                    support@scps.com
+
+                </p>
+
+                <p>
+
+                    <i class="fas fa-phone me-2"></i>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <i class="fas fa-location-dot me-2"></i>
+
+                    Surat, Gujarat
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- <hr> -->
+
+        <div class="text-center">
+
+            © <?php echo date('Y'); ?>
+
+            Student Panel | Smart Career & Placement Management System
+
+        </div>
+
+    </div>
+
+</footer>

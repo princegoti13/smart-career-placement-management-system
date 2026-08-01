@@ -141,6 +141,7 @@ The system allows students to create professional profiles, upload resumes, sear
 
 # 📁 Project Structure
 
+```text
 career-placement-system/
 │
 ├── admin/
@@ -159,6 +160,7 @@ career-placement-system/
 ├── README.md
 ├── LICENSE
 └── .gitignore
+```
 
 ---
 

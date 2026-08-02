@@ -747,6 +747,7 @@ Future Features
 </section>
 
 <?php include('includes/footer_index.php'); ?>
+<<<<<<< HEAD
 
 <script>
     const sections = document.querySelectorAll("section[id]");
@@ -784,3 +785,5 @@ Future Features
 
     });
 </script>
+=======
+>>>>>>> 143538906bd61aed87a1d65469657c5d68330524

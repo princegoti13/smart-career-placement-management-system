@@ -36,15 +36,9 @@ Navbar
 
 }
 
-.nav-link{
+.navbar-nav{
 
-    margin-left:18px;
-
-    font-weight:500;
-
-    color:#475569 !important;
-
-    transition:.3s;
+    gap: 20px;
 
 }
 

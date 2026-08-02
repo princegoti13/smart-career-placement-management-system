@@ -31,11 +31,7 @@ services:
     environment:
 
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: career_placement
-
-    ports:
-
-      - "3306:3306"
+      MYSQL_DATABASE: career_placement   
 
     volumes:
 

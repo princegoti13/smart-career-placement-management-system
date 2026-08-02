@@ -21,10 +21,13 @@ date_default_timezone_set(TIMEZONE);
 |--------------------------------------------------------------------------
 */
 
-define('DB_HOST', 'mysql');
-define('DB_USER', 'root');
-define('DB_PASS', 'root');
+define('DB_HOST', 'localhost');
+
 define('DB_NAME', 'career_placement');
+
+define('DB_USER', 'root');
+
+define('DB_PASS', '');
 
 /*
 |--------------------------------------------------------------------------

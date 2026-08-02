@@ -41,7 +41,7 @@ Navbar
 
                     <a class="nav-link active" href="#home">
 
-                        Home
+                        Homeok
 
                     </a>
 

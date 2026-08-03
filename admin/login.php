@@ -39,7 +39,7 @@ if (isset($_POST['login'])) {
                 $_SESSION['admin_email'] = $admin['email'];
 
                 $success = "Login Successful! Redirecting To Dashboard...";
-
+                
                 header("Refresh:3; url=dashboard.php");
             } else {
 

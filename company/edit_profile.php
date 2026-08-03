@@ -344,7 +344,8 @@ Address Information
                                                 <select
                                                     name="state"
                                                     id="state"
-                                                    class="form-select">
+                                                    class="form-select"
+                                                    value="<?php echo htmlspecialchars($company['state'] ?? ''); ?>">
 
                                                     <option value="">Select State</option>
 

@@ -331,7 +331,8 @@ include('../includes/sidebar_student.php');
 
                                 <select
                                     name="gender"
-                                    class="form-select">
+                                    class="form-select"
+                                    value="<?php echo htmlspecialchars($student['gender'] ?? ''); ?>">
 
                                     <option value="">Select Gender</option>
 
@@ -376,7 +377,8 @@ include('../includes/sidebar_student.php');
 
                                 <select
                                     name="city"
-                                    class="form-select">
+                                    class="form-select"
+                                    value="<?php echo htmlspecialchars($student['city'] ?? ''); ?>">
 
                                     <option value="">Select City</option>
 
@@ -420,18 +422,56 @@ include('../includes/sidebar_student.php');
 
                                 <select
                                     name="state"
-                                    class="form-select">
+                                    class="form-select"
+                                    value="<?php echo htmlspecialchars($student['state'] ?? ''); ?>">
 
                                     <option value="">Select State</option>
 
-                                    <option value="Gujarat"
-                                        <?php if (($student['state'] ?? '') == "Gujarat") echo "selected"; ?>>
-                                        Gujarat
-                                    </option>
-                                    <option value="Gujarat"
-                                        <?php if (($student['state'] ?? '') == "Gujarat ok") echo "selected"; ?>>
-                                        Gujarat ok
-                                    </option>
+                                    <?php
+                                    $states = [
+                                        "Andhra Pradesh",
+                                        "Arunachal Pradesh",
+                                        "Assam",
+                                        "Bihar",
+                                        "Chhattisgarh",
+                                        "Goa",
+                                        "Gujarat",
+                                        "Haryana",
+                                        "Himachal Pradesh",
+                                        "Jharkhand",
+                                        "Karnataka",
+                                        "Kerala",
+                                        "Madhya Pradesh",
+                                        "Maharashtra",
+                                        "Manipur",
+                                        "Meghalaya",
+                                        "Mizoram",
+                                        "Nagaland",
+                                        "Odisha",
+                                        "Punjab",
+                                        "Rajasthan",
+                                        "Sikkim",
+                                        "Tamil Nadu",
+                                        "Telangana",
+                                        "Tripura",
+                                        "Uttar Pradesh",
+                                        "Uttarakhand",
+                                        "West Bengal",
+                                        "Delhi"
+                                    ];
+
+                                    foreach ($states as $state) {
+                                    ?>
+
+                                        <option
+                                            value="<?php echo $state; ?>"
+                                            <?php if (($student['state'] ?? '') == $state) echo "selected"; ?>>
+
+                                            <?php echo $state; ?>
+
+                                        </option>
+
+                                    <?php } ?>
 
                                 </select>
 
@@ -445,7 +485,8 @@ include('../includes/sidebar_student.php');
 
                                 <select
                                     name="country"
-                                    class="form-select">
+                                    class="form-select"
+                                    value="<?php echo htmlspecialchars($student['country'] ?? ''); ?>">
 
                                     <option value="India" selected>
 
@@ -538,7 +579,8 @@ Academic Information
 
                                                 <select
                                                     name="course"
-                                                    class="form-select">
+                                                    class="form-select"
+                                                    value="<?php echo htmlspecialchars($student['course'] ?? ''); ?>">
 
                                                     <option value="">Select Course</option>
 
@@ -591,7 +633,8 @@ Academic Information
 
                                                 <select
                                                     name="semester"
-                                                    class="form-select">
+                                                    class="form-select"
+                                                    value="<?php echo htmlspecialchars($student['semester'] ?? ''); ?>">
 
                                                     <option value="">Select Semester</option>
 
@@ -623,7 +666,8 @@ Academic Information
 
                                                 <select
                                                     name="college_name"
-                                                    class="form-select">
+                                                    class="form-select"
+                                                    value="<?php echo htmlspecialchars($student['college_name'] ?? ''); ?>">
 
                                                     <option value="">Select College</option>
 
@@ -684,7 +728,8 @@ Academic Information
 
                                                 <select
                                                     name="university"
-                                                    class="form-select">
+                                                    class="form-select"
+                                                    value="<?php echo htmlspecialchars($student['university'] ?? ''); ?>">
 
                                                     <option value="">Select University</option>
 
@@ -745,7 +790,8 @@ Academic Information
 
                                                 <select
                                                     name="passing_year"
-                                                    class="form-select">
+                                                    class="form-select"
+                                                    value="<?php echo htmlspecialchars($student['passing_year'] ?? ''); ?>">
 
                                                     <option value="">Select Year</option>
 
@@ -940,7 +986,8 @@ Academic Information
 
                                                 <select
                                                     name="preferred_role"
-                                                    class="form-select">
+                                                    class="form-select"
+                                                    value="<?php echo htmlspecialchars($student['preferred_role'] ?? ''); ?>">
 
                                                     <option value="">Select</option>
 
@@ -983,7 +1030,8 @@ Academic Information
 
                                                 <select
                                                     name="preferred_location"
-                                                    class="form-select">
+                                                    class="form-select"
+                                                    value="<?php echo htmlspecialchars($student['preferred_location'] ?? ''); ?>">
 
                                                     <option value="">Select</option>
 
@@ -1024,7 +1072,8 @@ Academic Information
 
                                                 <select
                                                     name="employment_type"
-                                                    class="form-select">
+                                                    class="form-select"
+                                                    value="<?php echo htmlspecialchars($student['employment_type'] ?? ''); ?>">
 
                                                     <option value="">Select</option>
 
@@ -1043,7 +1092,8 @@ Academic Information
 
                                                 <select
                                                     name="expected_salary"
-                                                    class="form-select">
+                                                    class="form-select"
+                                                    value="<?php echo htmlspecialchars($student['expected_salary'] ?? ''); ?>">
 
                                                     <option value="">Select</option>
 

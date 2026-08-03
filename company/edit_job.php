@@ -233,6 +233,7 @@ Job Information
                                                 <select
                                                     name="category"
                                                     class="form-select"
+                                                    value="<?php echo htmlspecialchars($job['category']); ?>"
                                                     required>
 
                                                     <option value="">Select Category</option>
@@ -374,6 +375,7 @@ Job Requirements
                                                 <select
                                                     name="experience"
                                                     class="form-select"
+                                                    value="<?php echo htmlspecialchars($job['experience']); ?>"
                                                     required>
 
                                                     <?php
@@ -416,6 +418,7 @@ Job Requirements
                                                 <select
                                                     name="qualification"
                                                     class="form-select"
+                                                    value="<?php echo htmlspecialchars($job['qualification']); ?>"
                                                     required>
 
                                                     <?php

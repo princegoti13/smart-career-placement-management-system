@@ -277,6 +277,21 @@ include('../includes/sidebar_company.php');
 
                                             <td class="text-center">
 
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-info btn-sm mb-1 viewJobBtn"
+                                                    data-bs-target="#job<?php echo $job['id']; ?>">
+
+                                                    <i class="fas fa-eye"></i>
+
+                                                    <span class="btn-text">
+
+                                                        View
+
+                                                    </span>
+
+                                                </button>
+
                                                 <a href="view_applications.php"
                                                     class="btn btn-info btn-sm">
 
@@ -298,6 +313,238 @@ include('../includes/sidebar_company.php');
                                                     <i class="fas fa-trash"></i>
 
                                                 </button>
+
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+
+                                            <td colspan="7" class="border-0 p-0">
+
+                                                <div
+                                                    class="collapse mt-2"
+                                                    id="job<?php echo $job['id']; ?>">
+
+                                                    <div class="card border-0 shadow-sm">
+
+                                                        <div class="card-body">
+
+                                                            <div class="row">
+
+                                                                <!-- Left -->                                                                
+
+                                                                <!-- Right -->
+
+                                                                <div class="col-lg-9">
+
+                                                                    <div class="row">
+
+                                                                        <div class="col-md-6 mb-3">
+
+                                                                            <strong>Category</strong><br>
+
+                                                                            <?php echo htmlspecialchars($job['category']); ?>
+
+                                                                        </div>
+
+                                                                        <div class="col-md-6 mb-3">
+
+                                                                            <strong>Job Type</strong><br>
+
+                                                                            <?php echo htmlspecialchars($job['job_type']); ?>
+
+                                                                        </div>
+
+                                                                        <div class="col-md-6 mb-3">
+
+                                                                            <strong>Vacancy</strong><br>
+
+                                                                            <?php echo htmlspecialchars($job['vacancy']); ?>
+
+                                                                        </div>
+
+                                                                        <div class="col-md-6 mb-3">
+
+                                                                            <strong>Experience</strong><br>
+
+                                                                            <?php echo htmlspecialchars($job['experience']); ?>
+
+                                                                        </div>
+
+                                                                        <div class="col-md-6 mb-3">
+
+                                                                            <strong>Qualification</strong><br>
+
+                                                                            <?php echo htmlspecialchars($job['qualification']); ?>
+
+                                                                        </div>
+
+                                                                        <div class="col-md-6 mb-3">
+
+                                                                            <strong>Salary</strong><br>
+
+                                                                            <span class="badge bg-success">
+
+                                                                                <?php echo htmlspecialchars($job['salary']); ?>
+
+                                                                            </span>
+
+                                                                        </div>
+
+                                                                        <div class="col-md-6 mb-3">
+
+                                                                            <strong>State</strong><br>
+
+                                                                            <?php echo htmlspecialchars($job['state']); ?>
+
+                                                                        </div>
+
+                                                                        <div class="col-md-6 mb-3">
+
+                                                                            <strong>City</strong><br>
+
+                                                                            <?php echo htmlspecialchars($job['city']); ?>
+
+                                                                        </div>
+
+                                                                        <div class="col-md-6 mb-3">
+
+                                                                            <strong>Last Date</strong><br>
+
+                                                                            <?php echo date("d M Y", strtotime($job['last_date'])); ?>
+
+                                                                        </div>
+
+                                                                        <div class="col-md-6 mb-3">
+
+                                                                            <strong>Status</strong><br>
+
+                                                                            <?php if ($job['status'] == "Active") { ?>
+
+                                                                                <span class="badge bg-success">
+
+                                                                                    Active
+
+                                                                                </span>
+
+                                                                            <?php } else { ?>
+
+                                                                                <span class="badge bg-danger">
+
+                                                                                    Closed
+
+                                                                                </span>
+
+                                                                            <?php } ?>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <hr>
+
+                                                                    <h6 class="fw-bold">
+
+                                                                        Required Skills
+
+                                                                    </h6>
+
+                                                                    <?php
+
+                                                                    $skills = explode(",", $job['skills']);
+
+                                                                    foreach ($skills as $skill) {
+
+                                                                    ?>
+
+                                                                        <span class="badge bg-primary me-2 mb-2 p-2">
+
+                                                                            <?php echo trim($skill); ?>
+
+                                                                        </span>
+
+                                                                    <?php } ?>
+
+                                                                    <hr>
+
+                                                                    <h6 class="fw-bold">
+
+                                                                        Job Description
+
+                                                                    </h6>
+
+                                                                    <p class="text-muted">
+
+                                                                        <?php echo nl2br(htmlspecialchars($job['job_description'])); ?>
+
+                                                                    </p>
+
+                                                                    <hr>
+
+                                                                    <h6 class="fw-bold">
+
+                                                                        Responsibilities
+
+                                                                    </h6>
+
+                                                                    <p class="text-muted">
+
+                                                                        <?php
+
+                                                                        echo !empty($job['responsibilities'])
+                                                                            ? nl2br(htmlspecialchars($job['responsibilities']))
+                                                                            : "Not Available";
+
+                                                                        ?>
+
+                                                                    </p>
+
+                                                                    <hr>
+
+                                                                    <h6 class="fw-bold">
+
+                                                                        Benefits
+
+                                                                    </h6>
+
+                                                                    <p class="text-muted">
+
+                                                                        <?php
+
+                                                                        echo !empty($job['benefits'])
+                                                                            ? nl2br(htmlspecialchars($job['benefits']))
+                                                                            : "Not Available";
+
+                                                                        ?>
+
+                                                                    </p>
+
+                                                                    <hr>
+
+                                                                    <div class="d-flex justify-content-between align-items-center">
+
+                                                                        <small class="text-muted">
+
+                                                                            <i class="fas fa-calendar-alt me-1"></i>
+
+                                                                            Posted On :
+
+                                                                            <?php echo date("d M Y", strtotime($job['created_at'])); ?>
+
+                                                                        </small>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
 
                                             </td>
 
@@ -413,6 +660,42 @@ include('../includes/sidebar_company.php');
                         "delete_job.php?id=" + job_id;
 
                 }
+
+            });
+
+        });
+
+        /* ===============================
+           View / Hide Details
+        =============================== */
+
+        $(".viewJobBtn").click(function() {
+
+            var button = $(this);
+
+            var target = $(button.data("bs-target"));
+
+            target.collapse("toggle");
+
+            target.off("shown.bs.collapse hidden.bs.collapse");
+
+            target.on("shown.bs.collapse", function() {
+
+                button
+                    .removeClass("btn-info")
+                    .addClass("btn-secondary");
+
+                button.find(".btn-text").text("Hide");
+
+            });
+
+            target.on("hidden.bs.collapse", function() {
+
+                button
+                    .removeClass("btn-secondary")
+                    .addClass("btn-info");
+
+                button.find(".btn-text").text("View");
 
             });
 

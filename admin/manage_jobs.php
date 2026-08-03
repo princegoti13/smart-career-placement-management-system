@@ -218,7 +218,7 @@ include('../includes/sidebar_admin.php');
 
                         </div>
 
-                        <div class="col-md-2">
+                        <!-- <div class="col-md-2">
 
                             <button
                                 type="submit"
@@ -230,7 +230,7 @@ include('../includes/sidebar_admin.php');
 
                             </button>
 
-                        </div>
+                        </div> -->
 
                     </div>
 

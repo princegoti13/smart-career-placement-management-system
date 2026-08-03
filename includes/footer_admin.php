@@ -140,7 +140,7 @@
 
                         </a>
 
-                    </li>                    
+                    </li>
 
                 </ul>
 
@@ -211,3 +211,4 @@
     </div>
 
 </footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

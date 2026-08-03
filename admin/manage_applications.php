@@ -944,8 +944,6 @@ Pagination
     <?php include('../includes/footer_admin.php'); ?>
 </div>
 
-
-
 <script>
     $(document).ready(function() {
 

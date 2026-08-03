@@ -247,7 +247,33 @@ a:hover {
 
 }
 
+/* Scrollbar */
 
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#edfdf4;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#198754;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#157347;
+
+}
 
 
 /* ==========================================

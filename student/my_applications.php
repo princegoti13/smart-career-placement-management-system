@@ -79,10 +79,10 @@ $totalApplications = mysqli_num_rows($applications);
                 </p>
 
             </div>
-
+        
             <div>
 
-                <span class="badge bg-primary fs-6">
+                <span class="badge bg-primary fs-6 p-3">
 
                     Total Applications :
                     <?php echo $totalApplications; ?>

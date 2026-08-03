@@ -3,6 +3,18 @@ require_once('../includes/session.php');
 /** @var mysqli $conn */
 
 checkCompany();
+$where = "";
+$totalQuery = mysqli_query(
+
+    $conn,
+
+    "SELECT COUNT(*) AS total
+     FROM applications
+     $where"
+
+);
+
+$totalApplications = mysqli_fetch_assoc($totalQuery)['total'];
 
 $company_id = $_SESSION['company_id'];
 
@@ -97,7 +109,20 @@ include('../includes/sidebar_company.php');
 
                 </div>
 
+                <div>
+
+                    <span class="badge bg-primary fs-6 p-3">
+
+                        Total Applications :
+                        <?php echo $totalApplications; ?>
+
+                    </span>
+
+                </div>
+
             </div>
+
+
 
             <div class="card shadow-sm mb-4">
 
@@ -115,7 +140,7 @@ include('../includes/sidebar_company.php');
 
                         </div>
 
-                        <div class="col-md-2">
+                        <!-- <div class="col-md-2">
 
                             <button
                                 class="btn btn-success w-100">
@@ -126,7 +151,7 @@ include('../includes/sidebar_company.php');
 
                             </button>
 
-                        </div>
+                        </div> -->
 
                     </div>
 

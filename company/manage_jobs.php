@@ -112,7 +112,7 @@ include('../includes/sidebar_company.php');
 
                         </div>
 
-                        <div class="col-md-2">
+                        <!-- <div class="col-md-2">
 
                             <button
                                 class="btn btn-success w-100">
@@ -123,7 +123,7 @@ include('../includes/sidebar_company.php');
 
                             </button>
 
-                        </div>
+                        </div> -->
 
                     </div>
 

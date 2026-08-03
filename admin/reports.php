@@ -256,23 +256,19 @@ include('../includes/sidebar_admin.php');
 
                 <div class="dashboard-card">
 
-                    <div>
+                    <div class="d-flex justify-content-between align-items-center">
 
-                        <h6>
+                        <div>
 
-                            Total Students
+                            <h6>Total Students</h6>
 
-                        </h6>
+                            <h3><?php echo $totalStudents; ?></h3>
 
-                        <h3>
+                        </div>
 
-                            <?php echo $totalStudents; ?>
-
-                        </h3>
+                        <i class="fas fa-user-graduate"></i>
 
                     </div>
-
-                    <i class="fas fa-user-graduate"></i>
 
                 </div>
 
@@ -284,23 +280,19 @@ include('../includes/sidebar_admin.php');
 
                 <div class="dashboard-card">
 
-                    <div>
+                    <div class="d-flex justify-content-between align-items-center">
 
-                        <h6>
+                        <div>
 
-                            Total Companies
+                            <h6>Total Companies</h6>
 
-                        </h6>
+                            <h3><?php echo $totalCompanies; ?></h3>
 
-                        <h3>
+                        </div>
 
-                            <?php echo $totalCompanies; ?>
-
-                        </h3>
+                        <i class="fas fa-building"></i>
 
                     </div>
-
-                    <i class="fas fa-building"></i>
 
                 </div>
 
@@ -312,23 +304,19 @@ include('../includes/sidebar_admin.php');
 
                 <div class="dashboard-card">
 
-                    <div>
+                    <div class="d-flex justify-content-between align-items-center">
 
-                        <h6>
+                        <div>
 
-                            Total Jobs
+                            <h6>Total Jobs</h6>
 
-                        </h6>
+                            <h3><?php echo $totalJobs; ?></h3>
 
-                        <h3>
+                        </div>
 
-                            <?php echo $totalJobs; ?>
-
-                        </h3>
+                        <i class="fas fa-briefcase"></i>
 
                     </div>
-
-                    <i class="fas fa-briefcase"></i>
 
                 </div>
 
@@ -340,23 +328,19 @@ include('../includes/sidebar_admin.php');
 
                 <div class="dashboard-card">
 
-                    <div>
+                    <div class="d-flex justify-content-between align-items-center">
 
-                        <h6>
+                        <div>
 
-                            Total Applications
+                            <h6>Total Applications</h6>
 
-                        </h6>
+                            <h3><?php echo $totalApplications; ?></h3>
 
-                        <h3>
+                        </div>
 
-                            <?php echo $totalApplications; ?>
-
-                        </h3>
+                        <i class="fas fa-file-alt"></i>
 
                     </div>
-
-                    <i class="fas fa-file-alt"></i>
 
                 </div>
 
@@ -364,9 +348,9 @@ include('../includes/sidebar_admin.php');
 
         </div>
 
-        <!-- ===========================================
-     Application Status
-=========================================== -->
+        <!-- ===========================
+Application Status Cards
+=========================== -->
 
         <div class="row">
 
@@ -376,23 +360,19 @@ include('../includes/sidebar_admin.php');
 
                 <div class="dashboard-card">
 
-                    <div>
+                    <div class="d-flex justify-content-between align-items-center">
 
-                        <h6>
+                        <div>
 
-                            Pending
+                            <h6>Pending</h6>
 
-                        </h6>
+                            <h3><?php echo $pending; ?></h3>
 
-                        <h3>
+                        </div>
 
-                            <?php echo $pending; ?>
-
-                        </h3>
+                        <i class="fas fa-clock"></i>
 
                     </div>
-
-                    <i class="fas fa-clock"></i>
 
                 </div>
 
@@ -404,23 +384,19 @@ include('../includes/sidebar_admin.php');
 
                 <div class="dashboard-card">
 
-                    <div>
+                    <div class="d-flex justify-content-between align-items-center">
 
-                        <h6>
+                        <div>
 
-                            Shortlisted
+                            <h6>Shortlisted</h6>
 
-                        </h6>
+                            <h3><?php echo $shortlisted; ?></h3>
 
-                        <h3>
+                        </div>
 
-                            <?php echo $shortlisted; ?>
-
-                        </h3>
+                        <i class="fas fa-list-check"></i>
 
                     </div>
-
-                    <i class="fas fa-list-check"></i>
 
                 </div>
 
@@ -432,23 +408,19 @@ include('../includes/sidebar_admin.php');
 
                 <div class="dashboard-card">
 
-                    <div>
+                    <div class="d-flex justify-content-between align-items-center">
 
-                        <h6>
+                        <div>
 
-                            Accepted
+                            <h6>Accepted</h6>
 
-                        </h6>
+                            <h3><?php echo $accepted; ?></h3>
 
-                        <h3>
+                        </div>
 
-                            <?php echo $accepted; ?>
-
-                        </h3>
+                        <i class="fas fa-circle-check"></i>
 
                     </div>
-
-                    <i class="fas fa-circle-check"></i>
 
                 </div>
 
@@ -460,23 +432,19 @@ include('../includes/sidebar_admin.php');
 
                 <div class="dashboard-card">
 
-                    <div>
+                    <div class="d-flex justify-content-between align-items-center">
 
-                        <h6>
+                        <div>
 
-                            Rejected
+                            <h6>Rejected</h6>
 
-                        </h6>
+                            <h3><?php echo $rejected; ?></h3>
 
-                        <h3>
+                        </div>
 
-                            <?php echo $rejected; ?>
-
-                        </h3>
+                        <i class="fas fa-circle-xmark"></i>
 
                     </div>
-
-                    <i class="fas fa-circle-xmark"></i>
 
                 </div>
 

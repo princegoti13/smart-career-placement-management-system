@@ -718,3 +718,31 @@ Future Features
     margin:0;
 
 }
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#fff5eb;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#f0864d;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#f0864d;
+
+}

@@ -3,6 +3,19 @@ require_once('../includes/session.php');
 /** @var mysqli $conn */
 checkStudent();
 
+$where="";
+$totalQuery = mysqli_query(
+
+    $conn,
+
+    "SELECT COUNT(*) AS total
+     FROM jobs
+     $where"
+
+);
+
+$totalJobs = mysqli_fetch_assoc($totalQuery)['total'];
+
 $student = mysqli_fetch_assoc(
 
     mysqli_query(
@@ -86,6 +99,17 @@ $jobs = mysqli_query($conn, $sql);
                 <p class="text-muted mb-0">
                     Browse the latest job opportunities that match your skills and career goals.
                 </p>
+
+            </div>
+
+            <div>
+
+                <span class="badge bg-primary fs-6 p-3">
+
+                    Total Jobs :
+                    <?php echo $totalJobs; ?>
+
+                </span>
 
             </div>
 

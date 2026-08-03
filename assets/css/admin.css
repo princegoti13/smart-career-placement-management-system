@@ -877,3 +877,31 @@ Admin Footer
     color:#6b7280;
 
 }
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f3efff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#6f42c1;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#5b34a0;
+
+}

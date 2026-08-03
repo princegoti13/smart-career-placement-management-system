@@ -160,7 +160,7 @@
 
                     <i class="fas fa-envelope me-2"></i>
 
-                    support@scps.com
+                    meetdhola1312@gmail.com
 
                 </p>
 
@@ -168,7 +168,7 @@
 
                     <i class="fas fa-envelope me-2"></i>
 
-                    hr@scps.com
+                    princegoti13@gmail.com
 
                 </p>
 
@@ -176,7 +176,7 @@
 
                     <i class="fas fa-envelope me-2"></i>
 
-                    company@scps.com
+                    hit.vaghani2909@gmail.com
 
                 </p>
 

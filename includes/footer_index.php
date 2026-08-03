@@ -124,14 +124,14 @@
 
                     <i class="fas fa-envelope me-2"></i>
 
-                    support@scps.com
+                    meetdhola1312@gmail.com
 
                 </p>
                 <p>
 
                     <i class="fas fa-envelope me-2"></i>
 
-                    support@scps.com
+                    princegoti13@gmail.com
 
                 </p>
 
@@ -139,7 +139,7 @@
 
                     <i class="fas fa-envelope me-2"></i>
 
-                    info@scps.com
+                    hit.vaghani2909@gmail.com
 
                 </p>
 

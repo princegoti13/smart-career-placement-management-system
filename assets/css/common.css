@@ -907,6 +907,22 @@ Student Footer
 
     line-height:1.8;
 
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:12px;
+
+}
+
+.student-footer p i{
+
+    color:#0d6efd;
+
+    width:18px;
+
 }
 
 .student-footer ul{
@@ -992,6 +1008,12 @@ Student Footer
 }
 
 .student-footer .text-center{
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+    border-top:1px solid #dee2e6;
 
     color:#6b7280;
 

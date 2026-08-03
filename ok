@@ -10,7 +10,7 @@
 
                 <h4>
 
-                    <i class="fas fa-user-shield me-2"></i>
+                    <i class="fas fa-user-graduate me-2"></i>
 
                     Student Panel
 
@@ -18,8 +18,9 @@
 
                 <p>
 
-                    Student Panel Allows You To Manage Your Profile,
-                    Applications, Skills And The Entire Placement System Efficiently.
+                    Student Panel Allows You To Build Your Profile,
+                    Upload Resume, Search Jobs, Apply Online And
+                    Track Your Placement Journey.
 
                 </p>
 
@@ -109,7 +110,7 @@
 
             </div>
 
-            <!-- Management -->
+            <!-- Career -->
 
             <div class="col-lg-3 col-md-4">
 
@@ -162,7 +163,6 @@
                     meetdhola1312@gmail.com
 
                 </p>
-
                 <p>
 
                     <i class="fas fa-envelope me-2"></i>
@@ -170,7 +170,6 @@
                     princegoti13@gmail.com
 
                 </p>
-
                 <p>
 
                     <i class="fas fa-envelope me-2"></i>
@@ -199,7 +198,7 @@
 
         </div>
 
-        <div class="text-center mt-4">
+        <div class="text-center" mt-4>
 
             © <?php echo date('Y'); ?>
 

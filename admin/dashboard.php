@@ -199,7 +199,7 @@ Dashboard Cards
 
                         <div>
 
-                            <h6>Total Students</h6>
+                            <h6>Total Studentsok</h6>
 
                             <h3><?php echo $totalStudents; ?></h3>
 

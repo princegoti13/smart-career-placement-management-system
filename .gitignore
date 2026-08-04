@@ -1,5 +1,9 @@
 /vendor/
 /node_modules/
+/assets/uploads/
+/assets/uploads/company/
+/assets/uploads/profiles/
+/assets/uploads/resumes/
 
 .env
 

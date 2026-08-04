@@ -21,13 +21,11 @@ jobs:
           script: |
             cd /var/www/html/career-placement-system
 
-            git reset --hard
+            git fetch origin
+            git reset --hard origin/main
             git clean -fd
 
-            git pull origin main
-
-            sudo chown -R www-data:www-data /var/www/html/career-placement-system
-            sudo chmod -R 755 /var/www/html/career-placement-system
-            sudo chmod -R 777 /var/www/html/career-placement-system/assets/uploads
+            sudo chown -R www-data:www-data assets/uploads
+            sudo chmod -R 775 assets/uploads
 
             sudo systemctl restart apache2

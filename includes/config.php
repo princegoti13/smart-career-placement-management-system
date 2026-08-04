@@ -27,7 +27,7 @@ define('DB_NAME', 'career_placement');
 
 define('DB_USER', 'root');
 
-define('DB_PASS', '');
+define('DB_PASS', '123456');
 
 /*
 |--------------------------------------------------------------------------

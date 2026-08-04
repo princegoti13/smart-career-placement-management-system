@@ -25,9 +25,9 @@ define('DB_HOST', 'localhost');
 
 define('DB_NAME', 'career_placement');
 
-define('DB_USER', 'scps_user');
+define('DB_USER', 'root');
 
-define('DB_PASS', 'Scps@123');
+define('DB_PASS', '');
 
 /*
 |--------------------------------------------------------------------------

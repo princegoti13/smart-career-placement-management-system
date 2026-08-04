@@ -191,27 +191,7 @@ Dashboard Cards
 
             <!-- Total Students -->
 
-            <div class="col-xl-3 col-md-6 mb-4">
-
-                <div class="dashboard-card">
-
-                    <div class="d-flex justify-content-between align-items-center">
-
-                        <div>
-
-                            <h6>Total Studentsok</h6>
-
-                            <h3><?php echo $totalStudents; ?></h3>
-
-                        </div>
-
-                        <i class="fas fa-user-graduate"></i>
-
-                    </div>
-
-                </div>
-
-            </div>
+            
 
             <!-- Total Companies -->
 

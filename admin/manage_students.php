@@ -372,7 +372,16 @@ include('../includes/sidebar_admin.php');
 
                                             <?php
 
-                                            if (!empty($student['resume'])) {
+                                            $skillCountQuery = mysqli_query(
+                                                $conn,
+                                                "SELECT COUNT(*) AS total
+                                        FROM student_skills
+                                        WHERE student_id='" . $student['id'] . "'"
+                                            );
+
+                                            $skillCount = mysqli_fetch_assoc($skillCountQuery)['total'];
+
+                                            if (!empty($student['phone']) && !empty($student['gender']) && !empty($student['dob']) && !empty($student['course']) && !empty($student['semester']) && !empty($student['college_name']) && !empty($student['university']) && !empty($student['preferred_role']) && !empty($student['address']) && $skillCount > 0) {
 
                                                 echo '<span class="badge bg-success">Profile Complete</span>';
                                             } else {
@@ -542,7 +551,34 @@ include('../includes/sidebar_admin.php');
 
                                                                         <strong>Skills</strong><br>
 
-                                                                        <?php echo !empty($student['skills']) ? htmlspecialchars($student['skills']) : "Not Updated"; ?>
+                                                                        <?php
+
+                                                                        $studentId = $student['id'];
+
+                                                                        $skillQuery = mysqli_query(
+                                                                            $conn,
+                                                                            "SELECT skill_name
+                                                                            FROM student_skills
+                                                                            WHERE student_id = '$studentId'
+                                                                            ORDER BY skill_name ASC"
+                                                                        );
+
+                                                                        if (mysqli_num_rows($skillQuery) > 0) {
+
+                                                                            $skillList = [];
+
+                                                                            while ($skill = mysqli_fetch_assoc($skillQuery)) {
+
+                                                                                $skillList[] = $skill['skill_name'];
+                                                                            }
+
+                                                                            echo htmlspecialchars(implode(", ", $skillList));
+                                                                        } else {
+
+                                                                            echo "Not Updated";
+                                                                        }
+
+                                                                        ?>
 
                                                                     </div>
 

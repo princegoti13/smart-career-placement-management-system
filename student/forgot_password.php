@@ -118,12 +118,22 @@ if (isset($_POST['reset'])) {
 
                 <label>New Password</label>
 
-                <input
-                    type="password"
-                    name="password"
-                    class="form-control"
-                    placeholder="Enter New Password"
-                    required>
+                <div class="input-group">
+
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control"
+                        required>
+
+                    <span class="input-group-text" id="togglePassword" style="cursor:pointer;">
+
+                        <i class="fas fa-eye"></i>
+
+                    </span>
+
+                </div>
 
             </div>
 
@@ -131,12 +141,22 @@ if (isset($_POST['reset'])) {
 
                 <label>Confirm Password</label>
 
-                <input
-                    type="password"
-                    name="confirm_password"
-                    class="form-control"
-                    placeholder="Confirm New Password"
-                    required>
+                <div class="input-group">
+
+                    <input
+                        type="password"
+                        name="confirm_password"
+                        id="confirmPassword"
+                        class="form-control"
+                        required>
+
+                    <span class="input-group-text" id="toggleConfirmPassword">
+
+                        <i class="fas fa-eye"></i>
+
+                    </span>
+
+                </div>
 
             </div>
 
@@ -168,3 +188,43 @@ if (isset($_POST['reset'])) {
 </div>
 
 <?php include('../includes/footer.php'); ?>
+
+<script>
+    function togglePassword(inputId, toggleId) {
+
+        const input = document.getElementById(inputId);
+
+        const icon = document.querySelector("#" + toggleId + " i");
+
+        if (input.type === "password") {
+
+            input.type = "text";
+
+            icon.classList.remove("fa-eye");
+
+            icon.classList.add("fa-eye-slash");
+
+        } else {
+
+            input.type = "password";
+
+            icon.classList.remove("fa-eye-slash");
+
+            icon.classList.add("fa-eye");
+
+        }
+
+    }
+
+    document.getElementById("togglePassword").addEventListener("click", function() {
+
+        togglePassword("password", "togglePassword");
+
+    });
+
+    document.getElementById("toggleConfirmPassword").addEventListener("click", function() {
+
+        togglePassword("confirmPassword", "toggleConfirmPassword");
+
+    });
+</script>

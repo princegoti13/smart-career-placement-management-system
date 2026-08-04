@@ -638,7 +638,7 @@ include('../includes/sidebar_admin.php');
 
                                             <i class="fas fa-code me-2"></i>
 
-                                            Skills & Resume
+                                            Resume
 
                                         </h5>
 
@@ -648,85 +648,7 @@ include('../includes/sidebar_admin.php');
 
                                         <!-- Skills -->
 
-                                        <div class="mb-4">
-
-                                            <label class="mb-3">
-
-                                                Skills
-
-                                            </label>
-
-                                            <div class="row">
-
-                                                <?php
-
-                                                $selectedSkills = array_map(
-                                                    'trim',
-                                                    explode(",", $student['skills'])
-                                                );
-
-                                                $skills = [
-
-                                                    "PHP",
-                                                    "MySQL",
-                                                    "HTML",
-                                                    "CSS",
-                                                    "Bootstrap",
-                                                    "JavaScript",
-                                                    "jQuery",
-                                                    "AJAX",
-                                                    "React",
-                                                    "Node.js",
-                                                    "Java",
-                                                    "Python",
-                                                    "C",
-                                                    "C++",
-                                                    "Flutter",
-                                                    "Android",
-                                                    "Laravel",
-                                                    "CodeIgniter"
-
-                                                ];
-
-                                                foreach ($skills as $skill) {
-
-                                                    $skillId = str_replace(
-                                                        ['+', '.', ' '],
-                                                        ['_', '', '_'],
-                                                        $skill
-                                                    );
-
-                                                ?>
-
-                                                    <div class="col-md-3 col-sm-4 col-6 mb-2">
-
-                                                        <div class="form-check">
-
-                                                            <input
-                                                                type="checkbox"
-                                                                class="form-check-input"
-                                                                name="skills[]"
-                                                                id="<?php echo $skillId; ?>"
-                                                                value="<?php echo $skill; ?>"
-                                                                <?php if (in_array($skill, $selectedSkills)) echo "checked"; ?>>
-
-                                                            <label
-                                                                class="form-check-label"
-                                                                for="<?php echo $skillId; ?>">
-
-                                                                <?php echo $skill; ?>
-
-                                                            </label>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                <?php } ?>
-
-                                            </div>
-
-                                        </div>
+                                        
 
                                         <!-- Resume -->
 

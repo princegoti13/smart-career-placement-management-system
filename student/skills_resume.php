@@ -753,7 +753,7 @@ include('../includes/sidebar_student.php');
 
                         setTimeout(function() {
                             location.reload();
-                        }, 1000);
+                        }, 3000);
 
                     } else {
 
@@ -814,7 +814,7 @@ include('../includes/sidebar_student.php');
 
                         setTimeout(function() {
                             location.reload();
-                        }, 1000);
+                        }, 3000);
 
                     } else {
 

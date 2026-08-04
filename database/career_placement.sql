@@ -10,7 +10,7 @@ USE career_placement;
 -- Admin Table
 -- ==========================================
 
-CREATE TABLE admins (
+CREATE TABLE IF NOT EXISTS admins (
     id INT AUTO_INCREMENT PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
@@ -22,7 +22,7 @@ CREATE TABLE admins (
 -- Student Table
 -- ==========================================
 
-CREATE TABLE students (
+CREATE TABLE IF NOT EXISTS students (
     id INT AUTO_INCREMENT PRIMARY KEY,
 
     enrollment_no VARCHAR(30) UNIQUE NOT NULL,
@@ -69,7 +69,7 @@ CREATE TABLE students (
 -- Company Table
 -- ==========================================
 
-CREATE TABLE companies (
+CREATE TABLE IF NOT EXISTS companies (
 
     id INT AUTO_INCREMENT PRIMARY KEY,
 
@@ -108,7 +108,7 @@ CREATE TABLE companies (
 -- Jobs Table
 -- ==========================================
 
-CREATE TABLE jobs (
+CREATE TABLE IF NOT EXISTS jobs (
 
     id INT AUTO_INCREMENT PRIMARY KEY,
 
@@ -152,7 +152,7 @@ CREATE TABLE jobs (
 -- Applications Table
 -- ==========================================
 
-CREATE TABLE applications (
+CREATE TABLE IF NOT EXISTS applications (
 
     id INT AUTO_INCREMENT PRIMARY KEY,
 
@@ -189,7 +189,7 @@ CREATE TABLE applications (
 -- Student Skills Table
 -- ==========================================
 
-CREATE TABLE student_skills (
+CREATE TABLE IF NOT EXISTS student_skills (
 
     id INT AUTO_INCREMENT PRIMARY KEY,
 
